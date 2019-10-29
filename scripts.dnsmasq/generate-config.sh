@@ -12,11 +12,7 @@ server {
   listen $SERVICE_PORT;
   location / {
 
-    rewrite ^ \$request_uri;
-    rewrite ^//?(.*) /$1 break;
-    return 400;
-    
-    proxy_pass \$upstream_service\$uri;
+    proxy_pass \$upstream_service;
     proxy_read_timeout 9000;
     proxy_http_version 1.1;
 
