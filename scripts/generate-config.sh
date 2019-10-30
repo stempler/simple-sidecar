@@ -16,6 +16,9 @@ server {
     proxy_read_timeout 9000;
     proxy_http_version 1.1;
 
+    # disable body size check
+    client_max_body_size 0;
+
   }
 }
 EOT
