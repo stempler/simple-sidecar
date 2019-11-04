@@ -1,5 +1,8 @@
 FROM nginx:1.16-alpine
 
+# install curl (for healthchecks)
+RUN apk --no-cache add curl
+
 COPY scripts /scripts
 RUN chmod a+x /scripts/*.sh
 
