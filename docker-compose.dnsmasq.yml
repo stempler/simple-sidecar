@@ -6,6 +6,7 @@ services:
     build: .
     ports:
       - "8080:80"
+      - "6387:6387"
     environment:
       SERVICE_HOST: real_nginx
       SERVICE_PORT: "80"

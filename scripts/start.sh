@@ -6,4 +6,5 @@
 
 # start nginx
 echo "Starting nginx..."
-nginx -g "daemon off;"
+cd /
+exec /wrapper.sh

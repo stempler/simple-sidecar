@@ -9,4 +9,5 @@ echo "Starting dnsmasq..."
 nohup dnsmasq &
 # and nginx
 echo "Starting nginx..."
-nginx -g "daemon off;"
+cd /
+exec /wrapper.sh
