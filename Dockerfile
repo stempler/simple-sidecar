@@ -1,4 +1,4 @@
-FROM nginx:1.16-alpine
+FROM nginx:alpine
 
 # install curl (for healthchecks)
 RUN apk --no-cache add curl
